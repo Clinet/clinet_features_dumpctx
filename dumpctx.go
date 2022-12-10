@@ -6,8 +6,8 @@ import (
 )
 
 var Feature = features.Feature{
-	Help: "Use `/dumpctx sub1` or `/dumpctx sub2` to dump Clinet's subcommand context.",
 	Name: "dumpctx",
+	Desc: "Debug command provided by Clinet.",
 	Cmds: []*cmds.Cmd{
 		cmds.NewCmd("dumpctx", "DEBUG: Dumps command context as built by Clinet", nil).AddSubCmds(
 			cmds.NewCmd("sub1", "Test subcommand 1", handleDumpCtx),
